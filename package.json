@@ -1,0 +1,23 @@
+{
+  "name": "typescript-based-api-ui-framework",
+  "version": "1.0.0",
+  "description": "TypeScript Playwright framework for UI and API testing — yuriysafron.com",
+  "scripts": {
+    "test":            "playwright test",
+    "test:ui":         "playwright test tests/ui/",
+    "test:api":        "playwright test tests/api/",
+    "test:e2e":        "playwright test tests/e2e/",
+    "test:smoke":      "playwright test --grep @smoke",
+    "test:headed":     "playwright test --headed",
+    "report":          "playwright show-report",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:serve":    "allure serve allure-results"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.43.0",
+    "@types/node":      "^20.12.0",
+    "typescript":       "^5.4.5",
+    "allure-playwright": "^3.0.4",
+    "dotenv":           "^16.4.5"
+  }
+}
